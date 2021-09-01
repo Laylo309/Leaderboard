@@ -1,0 +1,36 @@
+{
+  "name": "leaderboard",
+  "version": "1.0.0",
+  "description": "In this project I have used webpack to develop a project that uses API to create Leaderboard.",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Laylo309/Leaderboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Laylo309/Leaderboard/issues"
+  },
+  "homepage": "https://github.com/Laylo309/Leaderboard#readme",
+  "devDependencies": {
+    "css-loader": "^6.2.0",
+    "esbuild": "^0.12.24",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.1.0"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^5.3.2",
+    "lodash": "^4.17.21",
+    "style-loader": "^3.2.1"
+  }
+}

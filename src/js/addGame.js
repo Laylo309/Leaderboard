@@ -12,8 +12,6 @@ const leaderboard = () => {
   })
     .then((response) => response.json())
     .then((json) => json)
-    .catch((err) => {
-      console.error(err);
-    });
+    .catch((err) => err);
 };
 export default leaderboard;

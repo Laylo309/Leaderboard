@@ -20,5 +20,4 @@ scoresForm.addEventListener('submit', (e) => {
 
 getByApi(myApi).then((res) => {
   displayScore(res.result);
-  console.log(res.result);
 });

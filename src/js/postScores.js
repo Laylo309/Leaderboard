@@ -14,8 +14,6 @@ const postScore = async () => {
       score: `${inputScore.value}`,
     }),
   });
-  // const res = await data.json();
-  // return res;
 };
 
 const getByApi = async (url) => {

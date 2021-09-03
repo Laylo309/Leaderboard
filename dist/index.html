@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
     <title>Leaderboard</title>
-  <script defer src="index.js"></script></head>
+  <script defer src="index.bundle.js"></script></head>
   <body class="container-md d-flex justify-content-center flex-wrap">
     <section class="m-3">
       <h1 class="py-5" id="leaderboard-title">Leaderboard</h1>
@@ -23,15 +23,6 @@
       <div class="py-2">
         <table class="table table-striped">
           <tbody id="leaderboard-table">
-            <tr>
-              <td>Name: 100</td>
-            </tr>
-            <tr>
-              <td>Name: 20</td>
-            </tr>
-            <tr>
-              <td>Name: 50</td>
-            </tr>
           </tbody>
         </table>
       </div>
@@ -40,8 +31,8 @@
 			<h2 class="py-3">Add your score</h2>
 			<form class="flex-column d-flex">
 				<div class="form-floating mb-3">
-					<input type="text" class="form-control" placeholder="Your name" id="floating-form">
-					<label for="floating-form">Your name</label>
+					<input type="text" class="form-control" placeholder="Your name" id="floating-name">
+					<label for="floating-name">Your name</label>
 				</div>
 					<div class="form-floating mb-3">
 					<input type="text" class="form-control" placeholder="Your score" id="floating-score">

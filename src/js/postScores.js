@@ -1,11 +1,10 @@
-const myApi =
-  'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/5YR6tabo7tvHObEZexNL/scores';
+const myApi = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/5YR6tabo7tvHObEZexNL/scores';
 
 const postScore = async () => {
   const inputName = document.getElementById('floating-name');
   const inputScore = document.getElementById('floating-score');
 
- await fetch(myApi, {
+  await fetch(myApi, {
     method: 'POST',
     headers: {
       'Content-type': 'application/json; charset=UTF-8',

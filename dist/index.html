@@ -12,39 +12,29 @@
       crossorigin="anonymous"
     />
     <title>Leaderboard</title>
-  <script defer src="index.js"></script></head>
+  <script defer src="index.bundle.js"></script></head>
   <body class="container-md d-flex justify-content-center flex-wrap">
-    <section class="m-3">
-      <h1 class="py-5" id="leaderboard-title">Leaderboard</h1>
+    <section class="m-5">
+      <h1 class="py-4" id="leaderboard-title">Leaderboard</h1>
       <div class="d-flext justify-content-between">
         <h2 class="me-2 d-inline">Recent Scores</h2>
-        <button type="button" class="btn btn-outline-secondary">Refresh</button>
+        <button type="button" class="btn btn-outline-secondary" id="refreshBttn">Refresh</button>
       </div>
-      <div class="py-2">
+      <div class="py-2 mt-3 responsive-table">
         <table class="table table-striped">
-          <tbody id="leaderboard-table">
-            <tr>
-              <td>Name: 100</td>
-            </tr>
-            <tr>
-              <td>Name: 20</td>
-            </tr>
-            <tr>
-              <td>Name: 50</td>
-            </tr>
-          </tbody>
+          <tbody id="leaderboard-table"></tbody>
         </table>
       </div>
     </section>
-		<section class="d-flex flex-column justify-content-center min-vh-100 m-3">
+		<section class="d-flex flex-column justify-content-center m-5">
 			<h2 class="py-3">Add your score</h2>
-			<form class="flex-column d-flex">
+			<form class="flex-column d-flex" id="scoresForm">
 				<div class="form-floating mb-3">
-					<input type="text" class="form-control" placeholder="Your name" id="floating-form">
-					<label for="floating-form">Your name</label>
+					<input type="text" class="form-control" placeholder="Your name" id="floating-name">
+					<label for="floating-name">Your name</label>
 				</div>
 					<div class="form-floating mb-3">
-					<input type="text" class="form-control" placeholder="Your score" id="floating-score">
+					<input type="number" class="form-control" placeholder="Your score" id="floating-score">
 					<label for="floating-score">Your score</label>
 				</div>
 				<button type="submit" class="btn btn-outline-secondary my-3">Submit</button>

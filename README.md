@@ -6,8 +6,7 @@
 
 ## Live Demo 
 
-Coming soon
-<!-- [Live Demo Link - TO DO list]() -->
+[Live Demo Link - TO DO list](https://laylo309.github.io/Leaderboard/)
 
 ## Built With 
 

@@ -1,4 +1,4 @@
-const myApi = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/5YR6tabo7tvHObEZexNL/scores';
+const myApi = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/N08D8RBmZ6I1HYiYFCDT/scores';
 
 const postScore = async () => {
   const inputName = document.getElementById('floating-name');

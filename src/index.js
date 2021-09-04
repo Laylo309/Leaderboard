@@ -2,7 +2,7 @@ import _ from 'lodash'; // eslint-disable-line
 import displayScore from './js/inputData.js';
 import { postScore, getByApi } from './js/postScores.js';
 
-const myApi = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/5YR6tabo7tvHObEZexNL/scores';
+const myApi = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/N08D8RBmZ6I1HYiYFCDT/scores';
 const scoresForm = document.getElementById('scoresForm');
 const refreshBttn = document.getElementById('refreshBttn');
 

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard</title>
+  <link href="css/style.css" rel="stylesheet" >
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+  crossorigin="anonymous"
+/>
+<script defer src="index.bundle.js"></script></head>
+<body class="container-md d-flex justify-content-center flex-wrap">
+  <section class="m-5">
+    <h1 class="py-4" id="leaderboard-title">Leaderboard</h1>
+    <div class="d-flext justify-content-between">
+      <h2 class="me-2 d-inline">Recent Scores</h2>
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        id="refreshBttn"
+      >
+        Refresh
+      </button>
+    </div>
+    <div class="py-2 mt-3 responsive-table">
+      <table class="table table-striped">
+        <tbody id="leaderboard-table"></tbody>
+      </table>
+    </div>
+  </section>
+  <section class="d-flex flex-column justify-content-center m-5">
+    <h2 class="py-3">Add your score</h2>
+    <form class="flex-column d-flex" id="scoresForm">
+      <div class="form-floating mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Your name"
+          id="floating-name"
+        />
+        <label for="floating-name">Your name</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input
+          type="number"
+          class="form-control"
+          placeholder="Your score"
+          id="floating-score"
+        />
+        <label for="floating-score">Your score</label>
+      </div>
+      <button type="submit" class="btn btn-outline-secondary my-3">
+        Submit
+      </button>
+    </form>
+  </section>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+  <script type="module" src="./index.js"></script>
+</body>
+</html>
